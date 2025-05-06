@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de compra</title>
+    
+    <link rel="stylesheet" href="/css/resumenCompra.css">
+</head>
+
+<header>
+    <h1>Tienda de Ropa</h1>
+    
+  </header>
+
+<body>
+    <div class="checkout-container">
+        <h1>Resumen de tu compra</h1>
+        
+        <!-- Productos en el carrito (se llenará dinámicamente) -->
+        <div class="cart-items" id="cart-items-container">
+            <!-- Los productos se insertarán aquí con JavaScript -->
+        </div>
+        
+        <!-- Resumen de precios -->
+        <div class="summary">
+            <h2>Total del pedido</h2>
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Envío:</span>
+                <span id="shipping">$5.99</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="total">$0.00</span>
+            </div>
+        </div>
+        
+        <!-- Botón de pago -->
+        <button id="checkout-btn" class="checkout-btn">Proceder al pago</button>
+    </div>
+
+<script src="/js/resumenCompras.js"></script>
+
+
+</body>
+
+</html>
