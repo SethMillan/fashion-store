@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda de Ropa</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
 <body>
   <header>
-    <h1>Tienda de Ropa</h1>
-    <button id="toggle-cart">Carrito (<span id="cart-count">0</span>)</button>
+    <div class="logo-nav">
+      <h1>Urban Threads</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Hombres</a></li>
+          <li><a href="#">Mujeres</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Ofertas</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button id="toggle-cart">
+      🛒 <span id="cart-count">0</span>
+    </button>
   </header>
+  
 
   <main>
+    <div class="product-wrapper">
     <section class="product-list">
       <div class="product">
         <!-- Aquí irá la imagen -->
@@ -21,7 +40,37 @@
         <p>$500.00</p>
         <button class="add-to-cart" data-name="Hoodie Básico" data-price="500" data-img="../images/hoddies/3.webp">Agregar al carrito</button>
       </div>
-
+      <div class="product">
+        <!-- Aquí irá la imagen -->
+        <div class="placeholder"><img src="images/hoddies/3.webp" alt="" style="width: 150px;"></div>
+        <h2>Hoodie Básico</h2>
+        <p>$500.00</p>
+        <button class="add-to-cart" data-name="Hoodie Básico" data-price="500" data-img="../images/hoddies/3.webp">Agregar al carrito</button>
+      </div><div class="product">
+        <!-- Aquí irá la imagen -->
+        <div class="placeholder"><img src="images/hoddies/3.webp" alt="" style="width: 150px;"></div>
+        <h2>Hoodie Básico</h2>
+        <p>$500.00</p>
+        <button class="add-to-cart" data-name="Hoodie Básico" data-price="500" data-img="../images/hoddies/3.webp">Agregar al carrito</button>
+      </div><div class="product">
+        <!-- Aquí irá la imagen -->
+        <div class="placeholder"><img src="images/hoddies/3.webp" alt="" style="width: 150px;"></div>
+        <h2>Hoodie Básico</h2>
+        <p>$500.00</p>
+        <button class="add-to-cart" data-name="Hoodie Básico" data-price="500" data-img="../images/hoddies/3.webp">Agregar al carrito</button>
+      </div><div class="product">
+        <!-- Aquí irá la imagen -->
+        <div class="placeholder"><img src="images/hoddies/3.webp" alt="" style="width: 150px;"></div>
+        <h2>Hoodie Básico</h2>
+        <p>$500.00</p>
+        <button class="add-to-cart" data-name="Hoodie Básico" data-price="500" data-img="../images/hoddies/3.webp">Agregar al carrito</button>
+      </div><div class="product">
+        <!-- Aquí irá la imagen -->
+        <div class="placeholder"><img src="images/hoddies/3.webp" alt="" style="width: 150px;"></div>
+        <h2>Hoodie Básico</h2>
+        <p>$500.00</p>
+        <button class="add-to-cart" data-name="Hoodie Básico" data-price="500" data-img="../images/hoddies/3.webp">Agregar al carrito</button>
+      </div>
       <div class="product">
         <!-- Aquí irá la imagen -->
         <div class="placeholder"><img src="images/hoddies/2.jpg" alt="" style="width: 180px;"></div>
@@ -38,7 +87,8 @@
         <button class="add-to-cart" data-name="Hoodie con Zíper" data-price="700" data-img="../images/hoddies/1.webp">Agregar al carrito</button>
       </div>
     </section>
-
+    </div>
+    
     <aside id="cart" class="hidden">
       <h2>Carrito de compras</h2>
       <ul id="cart-items"></ul>
