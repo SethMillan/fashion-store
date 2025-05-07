@@ -70,8 +70,12 @@ main {
   color: #444;
   margin-bottom: 1rem;
   border-radius: 6px;
+  overflow: hidden;
 }
-
+.placeholder img{
+  overflow: hidden;
+  width: 220px;
+}
 aside#cart {
   flex: 1;
   background: white;

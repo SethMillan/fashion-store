@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemElement = document.createElement('div');
             itemElement.className = 'item';
             itemElement.innerHTML = `
-                <img src="${item.imageUrl || 'https://via.placeholder.com/80'}" alt="${item.name}">
+                <img src="${item.img || '../images/hoodies/2.jpg'}" alt="${item.img}">
                 <div class="item-details">
                     <h3>${item.name}</h3>
                     <p>Precio: $${item.price.toFixed(2)}</p>

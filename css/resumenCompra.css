@@ -24,9 +24,13 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+header h1{
+    text-align: center;
+    color: #cfc8c8;
+}
 h1 {
     text-align: center;
-    color: #fffafa;
+    color: #0b0b0b;
 }
 
 .cart-items {
