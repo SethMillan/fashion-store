@@ -45,11 +45,21 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  let cart = JSON.parse(localStorage.getItem('cart')) || []; // Recuperamos el carrito de localStorage
+  let rawCart = localStorage.getItem('cart');
+  let cart = [];
+  
+  try {
+    cart = JSON.parse(rawCart);
+    if (!Array.isArray(cart)) throw new Error("Cart is not an array");
+  } catch (e) {
+    console.warn("Carrito corrupto o inválido, reiniciando:", e);
+    cart = [];
+    localStorage.setItem('cart', JSON.stringify(cart)); // limpia localStorage
+  }
   const cartList = document.getElementById('cart-items');
   const cartTotal = document.getElementById('cart-total');
   const cartCount = document.getElementById('cart-count');
-  const toggleCart = document.getElementById('toggle-cart');
+  const toggleCart = document.getElementById('toggle-cart'); //el boton del carrito
   const cartAside = document.getElementById('cart');
 
   // Función para guardar el carrito en localStorage
