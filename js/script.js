@@ -1,11 +1,11 @@
 // script.js
 
 document.addEventListener('DOMContentLoaded', () => {
-  const cart = [];
+
   const cartList = document.getElementById('cart-items');
   const cartTotal = document.getElementById('cart-total');
   const cartCount = document.getElementById('cart-count');
-  const toggleCart = document.getElementById('toggle-cart');
+  const toggleCart = document.getElementById('toggle-cart'); //el boton del carrito
   const cartAside = document.getElementById('cart');
 
   // function updateCartDisplay() {
